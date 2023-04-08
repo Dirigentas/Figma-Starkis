@@ -1,0 +1,18 @@
+@import './layout.css';
+@import './home.css';
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+:root {
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: Inter;
+    text-align: center;
+}
