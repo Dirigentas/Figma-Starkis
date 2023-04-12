@@ -1,6 +1,6 @@
 # BIT-CSS-module-exam
 
-Site published at: [in progress](in progress)
+Site published at: [GitHub pages](https://dirigentas.github.io/Figma-Starkis/)
 
 Design: [figma link](https://www.figma.com/file/CQNEFtwTyfXTpoXKRMCyBh/starkis?node-id=16-3&t=qzzoFeSko691gCQD-0)
 
