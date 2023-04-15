@@ -1,4 +1,4 @@
-# BIT-CSS-module-exam
+# Figma design
 
 Site published at: [GitHub pages](https://dirigentas.github.io/Figma-Starkis/)
 
