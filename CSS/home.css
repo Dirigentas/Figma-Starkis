@@ -1,29 +1,12 @@
 /* repetitive style */
+
 /* HEADER-start */
-h2 {
-    vertical-align: center;
-    text-align: center;
-}
-
-html,
-body {
-    margin: 0;
-    height: 100%;
-}
-
-* {
-    font-family: 'Raleway';
-    box-sizing: border-box;
-}
 
 .top-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #00baf0;
-    background: linear-gradient(to left, #f46b45, #eea849);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     height: 50px;
     padding: 1em;
@@ -132,10 +115,42 @@ body {
         border-bottom: 1px solid #444;
     }
 }
+
+.logo {
+    width: 88px;
+    height: 21px;
+}
+
+header {
+    background-image: url('../assets/garrett-butler-dU22KiaO0mk-unsplash 2.png');
+    background-size: cover;
+    background-position: top;
+    height: 567px;
+}
+h1 {
+    margin-top: 88px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.header-button {
+    margin-top: 127px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22.63px;
+    background: #45a1d1;
+    border-radius: 2px;
+    color: #fff;
+    width: 288px;
+    height: 48px;
+    text-decoration: none;
+}
 /* HEADER-end  */
 
-/* HERO section start */
-/* HERO section end */
+/* HEADER section start */
+/* HEADER section end */
 
 /* KVMR section start */
 /* KVMR section end */

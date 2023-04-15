@@ -1,5 +1,5 @@
 @import './home.css';
-@import url('https://fonts.googleapis.com/css?family=Inter');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
 
 :root {
 }
@@ -7,11 +7,13 @@
 html {
     scroll-behavior: smooth;
 }
+html,
 body {
     margin: 0;
+    height: 100%;
     padding: 0;
-    vertical-align: top;
+    vertical-align: middle;
     box-sizing: border-box;
-    font-family: Inter;
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
 }
