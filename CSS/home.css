@@ -271,5 +271,83 @@ h1 {
     font-weight: 600;
     font-size: 14px;
 }
+.leasing-box {
+    width: 144px;
+    height: 84px;
+    background: rgba(255, 255, 255, 0.25);
+    font-weight: 700;
+    position: relative;
+    top: -24px;
+    left: 130px;
+}
+.SBlogo {
+    max-width: 100%;
+    height: auto;
+}
+body > .leasing {
+    background-image: url('../assets/marc-olivier-jodoin-TjqzQlWlcP8-unsplash.png');
+    /* background-image: url('../assets/BG.png'); */
+    /* background-size: 100%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #45a1d1;
+    mix-blend-mode: multiply;
+    color: #fff;
+    /* position: relative; */
+}
+.leasing h2 {
+    margin-top: -9px;
+    color: #fff;
+}
+.leasing p {
+    color: #fff;
+}
+section > .contact {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    color: #444444;
+    text-align: center;
+}
+section > .contact-p {
+    font-size: 18px;
+    color: #222222;
+    text-align: center;
+}
+.contacts > form > button {
+    font-size: 18px;
+    line-height: 22.63px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #1f8cc5;
+    border-radius: 4px;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.contacts > form > input {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #cccccc;
+    font-family: 'Source Sans Pro';
+    border-radius: 2px;
+    padding: 15px 69px 14.17px 14px;
+}
+.contacts {
+    background-color: #fff;
+}
 
 /* FOOTER */
+
+footer {
+    line-height: 15.08px;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 23px 0 22px 0;
+    background-color: #444444;
+    color: #ffffff;
+}
