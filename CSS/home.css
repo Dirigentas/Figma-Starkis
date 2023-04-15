@@ -6,6 +6,7 @@ h2 {
     line-height: 22.63px;
     font-style: normal;
     text-transform: uppercase;
+    text-align: start;
 }
 p {
     font-size: 16px;
@@ -164,12 +165,12 @@ h1 {
 /* HEADER-end  */
 
 /* ergonomics section start */
-.ergonomics {
-    margin: 18px 16px;
+.section-container {
+    margin: 18px 16px 0 16px;
     background-color: #f7f7f9;
     padding: 0 14px;
 }
-.ergonomics > .kayak {
+.section-container > .kayak {
     max-width: 100%;
     height: auto;
     margin: 0 7px;
@@ -223,8 +224,8 @@ h1 {
 }
 /* ergonomics section end */
 
-/* KVMR section start */
-/* KVMR section end */
+/* FIN section start */
+/* FIN section end */
 
 /* DUC section start */
 /* DUC section end */
