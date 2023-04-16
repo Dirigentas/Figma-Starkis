@@ -21,6 +21,10 @@ p {
 }
 
 /* HEADER*/
+.logo {
+    width: 88px;
+    height: 21px;
+}
 
 .top-nav {
     display: flex;
@@ -28,33 +32,31 @@ p {
     align-items: center;
     justify-content: space-between;
     color: #fff;
-    font-weight: 700;
-    font-family: 'Source Sans Pro';
-    text-transform: uppercase;
     height: 20px;
     font-size: 16px;
-    padding: 21px 14px 0 14px;
+    font-weight: 700;
+    padding: 21px 17px 0 14px;
 }
-header a:hover {
-    color: #45a1d1;
-}
-.logo {
-    width: 88px;
-    height: 21px;
-}
+
 .menu {
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    margin: 0px;
+    padding: 0px;
     gap: 40px;
-    margin: 0;
-    padding: 0;
 }
+
 .menu > li {
-    text-decoration: none;
-    color: #fff;
     overflow: hidden;
 }
+.menu > li > a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Source Sans Pro';
+    color: #fff;
+}
+
 .menu-button-container {
     display: none;
     height: 100%;
@@ -64,6 +66,7 @@ header a:hover {
     justify-content: center;
     align-items: center;
 }
+
 #menu-toggle {
     display: none;
 }
@@ -97,6 +100,7 @@ header a:hover {
     margin-top: 0px;
     transform: rotate(-405deg);
 }
+
 @media (max-width: 750px) {
     .menu-button-container {
         display: flex;
@@ -104,12 +108,13 @@ header a:hover {
     .menu {
         position: absolute;
         top: 0;
-        margin-top: 50px;
+        margin-top: 100px;
         left: 0;
         flex-direction: column;
         width: 100%;
         justify-content: center;
         align-items: center;
+        gap: 0;
     }
     #menu-toggle ~ .menu li {
         height: 0;
@@ -145,13 +150,12 @@ header {
 }
 
 h1 {
-    margin-top: 88px;
+    margin: 129px 0 127px 0;
     font-weight: 700;
     color: #fff;
     font-size: 32px;
-    line-height: 40px;
+    line-height: 40.22px;
     text-transform: uppercase;
-    margin-bottom: 127px;
 }
 .header-link {
     background-color: #45a1d1;
@@ -160,12 +164,11 @@ h1 {
     color: #fff;
     font-weight: 600;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 22.63px;
     padding: 12px 69px;
     text-transform: uppercase;
 }
 .header-link:hover {
-    color: #45a1d1;
     background-color: #fff;
 }
 
@@ -383,5 +386,23 @@ footer {
         font-size: 24px;
         font-weight: 700;
         padding: 61px 40px 0 40px;
+    }
+
+    .header-link {
+        border-radius: 4px;
+        font-size: 28px;
+        line-height: 35px;
+        padding: 20px 57px;
+    }
+}
+header a:hover {
+    color: #45a1d1;
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        margin: 150px 0 99px 0;
+        font-size: 48px;
+        line-height: 60px;
     }
 }

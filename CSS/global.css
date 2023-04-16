@@ -17,3 +17,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
 }
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+}
