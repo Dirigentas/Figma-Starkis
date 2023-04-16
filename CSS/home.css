@@ -15,6 +15,7 @@ p {
     line-height: 24px;
     color: #222222;
     text-align: left;
+    margin: 0;
 }
 .white {
     color: #fff;
@@ -180,9 +181,12 @@ h1 {
     padding: 14px 14px;
 }
 .section-container > .kayak {
-    max-width: 100%;
+    width: 274px;
     height: auto;
-    margin: 0 7px;
+    margin: -5px 0px 0 -7px;
+}
+.kayak-p {
+    margin: -31px 0 20px 0;
 }
 .div-container {
     text-align: start;
@@ -213,8 +217,7 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 16px 20px;
-    margin-top: 20px;
-    padding-bottom: 22px;
+    margin: 24px 0 8px 0;
 }
 .ergonomics-link {
     border-radius: 2px;
@@ -393,6 +396,34 @@ footer {
         font-size: 28px;
         line-height: 35px;
         padding: 20px 57px;
+    }
+    .section-container {
+        margin: 40px 40px 0 40px;
+        padding: 52px 95px;
+    }
+    h2 {
+        font-size: 38px;
+        line-height: 48px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .div-container > .circle {
+        width: 91px;
+        height: 91px;
+    }
+    .ergonomics-link {
+        border-radius: 4px;
+        border: 2px solid #444444;
+        font-size: 28px;
+        line-height: 35px;
+        padding: 7px 12px;
+    }
+    .section-container > .kayak {
+        max-width: 931px;
+        width: 100%;
+        height: auto;
     }
 }
 header a:hover {
