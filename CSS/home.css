@@ -11,6 +11,12 @@ div {
 article {
     grid-area: bg;
 }
+.div-container {
+    grid-area: c;
+}
+p {
+    grid-area: zp;
+}
 h2 {
     color: #444444;
     font-weight: 700;
@@ -447,7 +453,7 @@ footer {
         line-height: 35px;
         padding: 7px 12px;
     }
-    .section-container > .kayak {
+    .section-container .kayak {
         max-width: 931px;
         width: 100%;
         height: auto;
@@ -461,6 +467,11 @@ footer {
         max-width: 522px;
         width: 522px;
         height: auto;
+    }
+    .big-table {
+        width: 45%;
+        display: inline-block;
+        margin-right: 20px;
     }
 }
 header a:hover {
@@ -489,5 +500,19 @@ header a:hover {
         grid-template-areas:
             "h2 h2 h2 bg bg"
             "p p p bg bg";
+    }
+    .kayak-grid {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "h2 h2 h2 h2"
+            "img img img ."
+            "img img img ."
+            "img img img ."
+            "img img img c"
+            "img img img ."
+            "zp zp zp zp";
+
     }
 }
