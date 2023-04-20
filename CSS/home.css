@@ -224,6 +224,8 @@ a:hover {
 }
 .div-container {
     text-align: start;
+    display: flex;
+    flex-direction: row;
 }
 .div-container > .circle {
     width: 38px;
@@ -233,6 +235,7 @@ a:hover {
 }
 .div-container > .sand {
     background-color: #b9b09b;
+    margin-right: 10px;
 }
 .div-container > .green {
     background-color: #3d502a;
@@ -252,6 +255,7 @@ a:hover {
     flex-wrap: wrap;
     gap: 16px 20px;
     margin: 24px 0 8px 0;
+    justify-content:baseline;
 }
 .ergonomics-link {
     border-radius: 2px;
@@ -271,6 +275,10 @@ a:hover {
 .dark {
     color: #fff;
     background-color: #444444;
+    /* margin-left: 50px; */
+    float: right;
+    /* position: absolute;
+    right: 111px; */
 }
 .dark:hover {
     color: #444444;
@@ -457,6 +465,7 @@ footer {
     .section-container {
         margin: 40px 40px 0 40px;
         padding: 52px 95px;
+        position: relative;
     }
     h2 {
         font-size: 38px;
@@ -467,20 +476,15 @@ footer {
         line-height: 32px;
     }
     .div-container > .circle {
-        width: 91px;
-        height: 91px;
-    }
-    .ergonomics-link {
-        border-radius: 4px;
-        border: 2px solid #444444;
-        font-size: 28px;
-        line-height: 35px;
-        padding: 7px 12px;
+        width: 81px;
+        height: 81px;
     }
     .section-container .kayak {
         max-width: 931px;
         width: 100%;
         height: auto;
+        margin-top: -50px;
+        }
     }
     .gradient .seat {
         /* max-width: 522px; */
@@ -496,6 +500,12 @@ footer {
         width: 45%;
         display: inline-block;
         margin-right: 20px;
+    }
+    .div-container > .sand {
+        margin-right: 22px;
+    }
+    .kayak-p {
+        margin-top: -60px;
     }
 }
 header a:hover {
@@ -527,17 +537,41 @@ header a:hover {
     }
     .kayak-grid {
         display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-template-rows: auto;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 7% 58% 18% 7% 10%;
         grid-template-areas:
-            "h2 h2 h2 h2"
-            "img img img ."
-            "img img img ."
-            "img img img ."
-            "img img img c"
-            "img img img ."
-            "zp zp zp zp";
+            "h2 h2"
+            "img ."
+            "img c"
+            "img ."
+            "zp zp";
+    }
+    .ergonomics-link {
+        border-radius: 4px;
+        border: 2px solid #444444;
+        font-size: 28px;
+        line-height: 35px;
+        padding: 7px 12px;
+    }
+    .div-container > .circle {
+        width: 49.5px;
+        height: 49.5px;
+    }
+    .div-container {
+        margin-left: 25px;
+    }
+}
+@media (min-width: 1200px) {
+    .div-container > .circle {
+        width: 69.5px;
+        height: 69.5px;
+    }
 
+}
+@media (min-width: 1440px) {
+    .div-container > .circle {
+        width: 91px;
+        height: 91px;
     }
 }
 #succes-icon {
@@ -548,3 +582,9 @@ header a:hover {
     bottom: -70px;
     display: none;
   }
+  @media (min-width: 550px) {
+  .dark {
+    position: absolute;
+    right: 95px;
+    }
+}
