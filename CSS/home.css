@@ -208,6 +208,7 @@ header a:hover {
 /* ERGONOMICS section */
 
 .section-container {
+    max-width: 100%;
     margin: 18px 16px 0 16px;
     background-color: #f7f7f9;
     padding: 14px 14px;
@@ -337,9 +338,10 @@ header a:hover {
     flex-direction: column;
     gap: 20px;
     background-color: #fff;
-    margin-bottom: 10px;
     margin: 15px -14px;
     padding: 30px 14px;
+    width: 100%;
+    max-width: 473px;
 }
 .table {
     display: flex;
@@ -362,6 +364,14 @@ header a:hover {
     font-weight: 600;
     font-size: 14px;
 }
+.big-table-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* LEASING section */
+
 .leasing-box {
     width: 144px;
     height: 84px;
@@ -514,9 +524,9 @@ footer {
         height: auto;
     }
     .big-table {
-        width: 43%;
-        display: inline-block;
-        margin-right: 32px;
+        margin: 15px 0px;
+        padding: 30px 44px;
+        gap: 28px;
     }
     .color-container > .sand {
         margin-right: 22px;
@@ -614,5 +624,10 @@ footer {
     .dark {
         position: absolute;
         right: 95px;
+    }
+}
+@media (min-width: 1392px) {
+    .big-table-container {
+        justify-content: space-between;
     }
 }
