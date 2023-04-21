@@ -11,7 +11,7 @@ div {
 article {
     grid-area: bg;
 }
-.div-container {
+.color-container {
     grid-area: c;
 }
 p {
@@ -241,6 +241,10 @@ header a:hover {
     background-color: #b9b09b;
     margin-right: 10px;
 }
+.color-container > .little-sand {
+    background-color: #b9b09b;
+    margin-right: 5px;
+}
 .color-container > .green {
     background-color: #3d502a;
 }
@@ -342,11 +346,16 @@ header a:hover {
     flex-direction: row;
     justify-content: space-between;
     border-bottom: #444444;
+    align-items: flex-end;
+    border-bottom: 0.5px solid #cccccc;
+    padding: 4px;
+    margin: -4px -4px;
 }
 .table > .row-title {
     color: #888888;
     text-transform: uppercase;
     font-size: 12px;
+    font-weight: 600;
 }
 .table > .row-value {
     text-transform: uppercase;
@@ -437,6 +446,14 @@ footer {
 /* breakpoints */
 
 @media (min-width: 768px) {
+    .table > .row-title {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .table > .row-value {
+        font-size: 22px;
+        line-height: 28px;
+    }
     header {
         background-image: url('../assets/garrett-butler-dU22KiaO0mk-unsplash 1.png');
         background-size: cover;
@@ -476,6 +493,10 @@ footer {
         width: 81px;
         height: 81px;
     }
+    .color-container > .little-circle {
+        width: 30px;
+        height: 30px;
+    }
     .section-container .kayak {
         max-width: 931px;
         width: 100%;
@@ -493,12 +514,15 @@ footer {
         height: auto;
     }
     .big-table {
-        width: 45%;
+        width: 43%;
         display: inline-block;
-        margin-right: 20px;
+        margin-right: 32px;
     }
     .color-container > .sand {
         margin-right: 22px;
+    }
+    .color-container > .little-sand {
+        margin-right: 10px;
     }
     .kayak-p {
         margin-top: -60px;
@@ -553,6 +577,11 @@ footer {
         width: 49.5px;
         height: 49.5px;
     }
+    .color-container > .little-circle {
+        width: 40px;
+        height: 40px;
+    }
+
     .color-container {
         margin-left: 25px;
     }
@@ -561,6 +590,10 @@ footer {
     .color-container > .circle {
         width: 69.5px;
         height: 69.5px;
+    }
+    .color-container > .little-circle {
+        width: 50px;
+        height: 50px;
     }
 }
 @media (min-width: 1440px) {
