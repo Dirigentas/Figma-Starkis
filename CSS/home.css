@@ -214,7 +214,8 @@ header a:hover {
     padding: 14px 14px;
 }
 .section-container .kayak {
-    width: 274px;
+    width: 100%;
+    max-width: 274px;
     height: auto;
     margin: -5px 0px 0 -7px;
 }
@@ -305,8 +306,8 @@ header a:hover {
     background-position: center center;
 }
 .fin {
-    max-width: 100%;
-    max-width: 522px;
+    width: 100%;
+    max-width: 317px;
     height: 317px;
 }
 
@@ -324,7 +325,8 @@ header a:hover {
     font-weight: 400;
 }
 .gradient .seat {
-    width: 260px;
+    width: 100%;
+    max-width: 260px;
     height: auto;
 }
 
@@ -438,7 +440,8 @@ section > .contact-p {
     font-family: 'Source Sans Pro';
     border-radius: 2px;
     border: 1px solid #444444;
-    padding: 15px 69px 14.17px 14px;
+    width: 255.4px;
+    height: 44.4px;
     @media (min-width: 870px) {
         font-size: 18px;
         width: 618px;
