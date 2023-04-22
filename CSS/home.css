@@ -405,6 +405,9 @@ body > .leasing {
 .leasing p {
     color: #fff;
 }
+
+/* CONTACT section */
+
 section > .contact {
     font-weight: 700;
     font-size: 28px;
@@ -427,19 +430,6 @@ section > .contact-p {
         margin-bottom: 28px;
     }
 }
-.contacts > form input[type='submit'] {
-    font-size: 18px;
-    line-height: 22.63px;
-    font-weight: 600;
-    color: #ffffff;
-    background: #1f8cc5;
-    border-radius: 4px;
-    text-transform: uppercase;
-    padding: 12px 20px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    font-family: 'Source Sans Pro', sans-serif;
-}
 .contacts > form > .input {
     font-weight: 400;
     font-size: 16px;
@@ -458,8 +448,36 @@ section > .contact-p {
         border-radius: 4px;
     }
 }
+.contacts > form input[type='submit'] {
+    font-size: 18px;
+    line-height: 22.63px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #1f8cc5;
+    border-radius: 4px;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: 'Source Sans Pro';
+    @media (min-width: 870px) {
+        font-size: 28px;
+        line-height: 35px;
+        width: 234px;
+        height: 64px;
+        margin-bottom: 24px;
+    }
+}
 .contacts {
     background-color: #fff;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 870px) {
+        gap: 35px;
+    }
 }
 
 /* FOOTER */
@@ -471,6 +489,11 @@ footer {
     padding: 23px 0 22px 0;
     background-color: #444444;
     color: #ffffff;
+    @media (min-width: 870px) {
+        font-size: 18px;
+        line-height: 23px;
+        padding: 41px 0 40px 0;
+    }
 }
 
 /* breakpoints */
