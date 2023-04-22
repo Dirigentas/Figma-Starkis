@@ -410,11 +410,21 @@ section > .contact {
     line-height: 32px;
     color: #444444;
     text-align: center;
+    @media (min-width: 870px) {
+        font-size: 48px;
+        line-height: 60px;
+    }
 }
 section > .contact-p {
     font-size: 18px;
     color: #222222;
     text-align: center;
+    @media (min-width: 870px) {
+        font-size: 28px;
+        line-height: 32px;
+        margin-top: 20px;
+        margin-bottom: 28px;
+    }
 }
 .contacts > form input[type='submit'] {
     font-size: 18px;
@@ -429,14 +439,23 @@ section > .contact-p {
     margin-bottom: 25px;
     font-family: 'Source Sans Pro', sans-serif;
 }
-.contacts > form > input {
+.contacts > form > .input {
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
     color: #cccccc;
     font-family: 'Source Sans Pro';
     border-radius: 2px;
+    border: 1px solid #444444;
     padding: 15px 69px 14.17px 14px;
+    @media (min-width: 870px) {
+        font-size: 18px;
+        width: 618px;
+        height: 71px;
+        padding: 0 0 0 30px;
+        border: 1.6px solid #444444;
+        border-radius: 4px;
+    }
 }
 .contacts {
     background-color: #fff;
@@ -591,10 +610,6 @@ footer {
         width: 40px;
         height: 40px;
     }
-
-    /* .color-container {
-        margin-left: 25px;
-    } */
 }
 @media (min-width: 1200px) {
     .color-container > .circle {
