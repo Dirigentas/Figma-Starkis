@@ -222,9 +222,9 @@ header a:hover {
     margin: -31px 0 20px 0;
 }
 .color-container {
-    text-align: start;
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
 }
 .color-container > .circle {
     width: 38px;
@@ -592,9 +592,9 @@ footer {
         height: 40px;
     }
 
-    .color-container {
+    /* .color-container {
         margin-left: 25px;
-    }
+    } */
 }
 @media (min-width: 1200px) {
     .color-container > .circle {
