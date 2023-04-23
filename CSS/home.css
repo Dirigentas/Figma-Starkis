@@ -229,11 +229,14 @@ header a:hover {
 }
 .kayak-p {
     margin: -31px 0 20px 0;
+    @media (min-width: 768px) {
+        margin-top: -60px;
+    }
 }
 .color-container {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 .color-container > .circle {
     width: 38px;
@@ -583,7 +586,6 @@ footer {
         font-weight: 700;
         padding: 61px 40px 0 40px;
     }
-
     .header-link {
         border-radius: 4px;
         font-size: 28px;
@@ -593,7 +595,6 @@ footer {
     .section-container {
         margin: 40px 40px 0 40px;
         padding: 52px 95px;
-        /* position: relative; */
     }
     p {
         font-size: 18px;
@@ -621,7 +622,6 @@ footer {
     .fin {
         max-width: 522px;
         max-height: 522px;
-        /* width: 522px; */
         height: auto;
     }
     .big-table {
@@ -634,9 +634,6 @@ footer {
     }
     .color-container > .little-sand {
         margin-right: 10px;
-    }
-    .kayak-p {
-        margin-top: -60px;
     }
     header a:hover {
         color: #45a1d1;
