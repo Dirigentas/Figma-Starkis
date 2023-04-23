@@ -26,6 +26,14 @@ h2 {
     text-transform: uppercase;
     text-align: start;
     margin: 0;
+    @media (min-width: 768px) {
+        font-size: 24px;
+        line-height: 35px;
+    }
+    @media (min-width: 900px) {
+        font-size: 38px;
+        line-height: 48px;
+    }
 }
 p {
     font-size: 16px;
@@ -375,37 +383,87 @@ header a:hover {
 
 /* LEASING section */
 
+body > .leasing {
+    background-image: url('../assets/marc-olivier-jodoin-TjqzQlWlcP8-unsplash.png');
+    background-color: #45a1d1;
+    /* background-image: url('../assets/BG.png'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    mix-blend-mode: multiply;
+    color: #fff;
+}
+.leasing-flex {
+    display: flex;
+    justify-content: flex-end;
+}
 .leasing-box {
     width: 144px;
     height: 84px;
     background: rgba(255, 255, 255, 0.25);
     font-weight: 700;
-    position: relative;
-    top: -24px;
-    left: 130px;
+    margin-top: -25px;
+    margin-right: -14px;
+    @media (min-width: 768px) {
+        width: 200px;
+        height: 118px;
+        margin-top: -77px;
+        margin-right: -50px;
+    }
+    @media (min-width: 1265px) {
+        width: 350px;
+        height: 208px;
+        margin-top: -77px;
+        margin-right: 0px;
+    }
 }
 .SBlogo {
     max-width: 100%;
     height: auto;
 }
-body > .leasing {
-    background-image: url('../assets/marc-olivier-jodoin-TjqzQlWlcP8-unsplash.png');
-    /* background-image: url('../assets/BG.png'); */
-    /* background-size: 100%; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-color: #45a1d1;
-    mix-blend-mode: multiply;
-    color: #fff;
-    /* position: relative; */
+
+.leasing-box > .price {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 45px;
+    text-transform: uppercase;
+    @media (min-width: 768px) {
+        font-size: 16px;
+    }
+    @media (min-width: 1265px) {
+        font-size: 22px;
+        line-height: 115px;
+    }
+}
+.price-number {
+    font-size: 20px;
+    @media (min-width: 768px) {
+        font-size: 40px;
+    }
 }
 .leasing h2 {
-    margin-top: -9px;
+    margin-top: 15px;
+    margin-bottom: 14px;
     color: #fff;
+    @media (min-width: 768px) {
+        margin-top: -50px;
+        margin-bottom: 33px;
+    }
+    @media (min-width: 1265px) {
+        margin-top: -150px;
+        margin-bottom: 33px;
+    }
 }
-.leasing p {
+.leasing .p-leasing {
     color: #fff;
+    @media (min-width: 768px) {
+        margin-bottom: 20px;
+    }
+    @media (min-width: 1265px) {
+        width: 680px;
+        margin-bottom: 20px;
+    }
 }
 
 /* CONTACT section */
@@ -535,11 +593,7 @@ footer {
     .section-container {
         margin: 40px 40px 0 40px;
         padding: 52px 95px;
-        position: relative;
-    }
-    h2 {
-        font-size: 38px;
-        line-height: 48px;
+        /* position: relative; */
     }
     p {
         font-size: 18px;
