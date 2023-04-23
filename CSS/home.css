@@ -17,6 +17,15 @@ article {
 p {
     grid-area: zp;
 }
+.mt-20 {
+    margin-top: 20px;
+}
+.mr-20 {
+    margin-right: 20px;
+}
+.mb-16 {
+    margin-bottom: 16px;
+}
 h2 {
     color: #444444;
     font-weight: 700;
@@ -261,21 +270,19 @@ header a:hover {
 .color-container > .green {
     background-color: #3d502a;
 }
-.mt-20 {
-    margin-top: 20px;
-}
-.mr-20 {
-    margin-right: 20px;
-}
-.mb-16 {
-    margin-bottom: 16px;
-}
 .links-flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 16px 20px;
     margin: 24px 0 8px 0;
+    justify-content: space-between;
+}
+.small-links-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px 20px;
     justify-content: baseline;
 }
 .ergonomics-link {
@@ -296,10 +303,9 @@ header a:hover {
 .dark {
     color: #fff;
     background-color: #444444;
-    /* margin-left: 50px; */
-    float: right;
-    /* position: absolute;
-    right: 111px; */
+
+    @media (min-width: 550px) {
+    }
 }
 .dark:hover {
     color: #444444;
@@ -309,17 +315,62 @@ header a:hover {
 /* FIN section */
 
 .fin-background {
+    margin: 12px 0 20px 0;
     background-image: url('../assets/Mask group.png');
     background-size: 100%;
-    max-width: 400px;
-    max-height: auto;
     background-repeat: no-repeat;
     background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    @media (min-width: 500px) {
+        max-width: 350px;
+        max-height: 350px;
+        margin: 45px 0 50px 0;
+    }
+    @media (min-width: 1000px) {
+        max-width: 425px;
+        max-height: 425px;
+    }
 }
 .fin {
-    width: 100%;
-    max-width: 317px;
-    height: 317px;
+    height: auto;
+    min-width: 310px;
+    min-height: 317px;
+    margin: 0px 0 0px 0;
+    @media (min-width: 500px) {
+        min-width: 430px;
+        height: 430px;
+    }
+    @media (min-width: 1000px) {
+        min-width: 369px;
+        height: 369px;
+        margin: 0;
+    }
+    @media (min-width: 1200px) {
+        min-width: 522px;
+        height: 522px;
+        margin: 0;
+    }
+}
+.fin-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fin-grid > h2 {
+    @media (min-width: 1000px) {
+        margin-top: 78px;
+    }
+}
+.p-fin {
+    margin-bottom: 26px;
+    @media (min-width: 1000px) {
+        margin-bottom: 30px;
+    }
 }
 
 /* SEAT section */
@@ -336,9 +387,23 @@ header a:hover {
     font-weight: 400;
 }
 .gradient .seat {
+    margin-top: 10px;
+    margin-bottom: 2px;
     width: 100%;
     max-width: 260px;
     height: auto;
+    @media (min-width: 1000px) {
+        margin: 0;
+        max-width: 524px;
+        width: 100%;
+        height: auto;
+    }
+}
+.seat-mt {
+    margin-top: 11px;
+    @media (min-width: 1000px) {
+        margin-top: 23px;
+    }
 }
 
 /* FEATURES section */
@@ -387,9 +452,9 @@ header a:hover {
 /* LEASING section */
 
 body > .leasing {
-    background-image: url('../assets/marc-olivier-jodoin-TjqzQlWlcP8-unsplash.png');
-    background-color: #45a1d1;
-    /* background-image: url('../assets/BG.png'); */
+    /* background-image: url('../assets/marc-olivier-jodoin-TjqzQlWlcP8-unsplash.png'); */
+    /* background-color: #45a1d1; */
+    background-image: url('../assets/BG.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -614,16 +679,6 @@ footer {
         height: auto;
         margin-top: -50px;
     }
-    .gradient .seat {
-        max-width: 524px;
-        width: 100%;
-        height: auto;
-    }
-    .fin {
-        max-width: 522px;
-        max-height: 522px;
-        height: auto;
-    }
     .big-table {
         margin: 15px 0px;
         padding: 30px 44px;
@@ -647,17 +702,20 @@ footer {
         line-height: 60px;
     }
     .seat-grid {
+        margin: -11px -11px -12px -53px;
         display: grid;
-        grid-template-columns: 24% 24% 20% 20% 20%;
-        grid-template-rows: auto;
+        grid-template-columns: 43.1% auto;
+        grid-template-rows: 75px 96px 33px auto;
         grid-template-areas:
-            'img img h2 h2 h2'
-            'img img p p p'
-            'img img p p p';
+            'img .'
+            'img h2'
+            'img .'
+            'img p';
     }
     .fin-grid {
+        margin-right: -25px;
         display: grid;
-        grid-template-columns: 45% 5% 50%;
+        grid-template-columns: 59% 6% 35%;
         grid-template-rows: auto;
         grid-template-areas:
             'h2 . bg'
@@ -713,12 +771,6 @@ footer {
     width: 50px;
     bottom: -70px;
     display: none;
-}
-@media (min-width: 550px) {
-    .dark {
-        position: absolute;
-        right: 95px;
-    }
 }
 @media (min-width: 1392px) {
     .big-table-container {
