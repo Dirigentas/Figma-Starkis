@@ -595,11 +595,13 @@ section > .contact-p {
     font-family: 'Source Sans Pro';
     border-radius: 2px;
     border: 1px solid #444444;
-    width: 254.4px;
-    height: 44.4px;
+    width: 100%;
+    max-width: 500px;
+    height: 44px;
+    padding: 0 14px 0 14px;
     @media (min-width: 870px) {
         font-size: 18px;
-        width: 614.8px;
+        max-width: 614.8px;
         height: 70.8px;
         padding: 0 0 0 30px;
         border: 1.6px solid #444444;
@@ -633,6 +635,14 @@ section > .contact-p {
         height: 64px;
         margin-bottom: 67px;
         padding: 0;
+    }
+}
+.contacts > form input[type='submit']:hover {
+    background-color: #fff;
+    color: #45a1d1;
+    border: 1px solid #45a1d1;
+    @media (min-width: 1000px) {
+        border: 2px solid #45a1d1;
     }
 }
 .contacts {
