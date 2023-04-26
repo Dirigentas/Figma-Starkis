@@ -56,8 +56,8 @@ p {
     color: #fff;
 }
 .container {
-    width: 1440px;
-    margin: 0 calc(50% - 720px);
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 /* HEADER*/
@@ -267,13 +267,22 @@ header a:hover {
         justify-content: flex-end;
     }
 }
+.color-container-table {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    @media (min-width: 1000px) {
+        justify-content: flex-end;
+    }
+}
 .color-container > .circle {
     width: 38px;
     height: 38px;
     display: inline-block;
     border-radius: 50%;
 }
-.color-container > .little-circle {
+.color-container-table > .little-circle {
     width: 21px;
     height: 21px;
     display: inline-block;
@@ -283,11 +292,11 @@ header a:hover {
     background-color: #b9b09b;
     margin-right: 10px;
 }
-.color-container > .little-sand {
+.color-container-table > .little-sand {
     background-color: #b9b09b;
     margin-right: 5px;
 }
-.color-container > .green {
+.green {
     background-color: #3d502a;
 }
 .links-flex {
@@ -463,7 +472,7 @@ header a:hover {
 
 /* LEASING section */
 
-body > .leasing {
+body .leasing {
     /* background-image: url('../assets/marc-olivier-jodoin-TjqzQlWlcP8-unsplash.png'); */
     /* background-color: #45a1d1; */
     background-image: url('../assets/BG.png');
@@ -586,7 +595,6 @@ section > .contact-p {
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
-    color: #cccccc;
     font-family: 'Source Sans Pro';
     border-radius: 2px;
     border: 1px solid #444444;
@@ -601,6 +609,11 @@ section > .contact-p {
         border-radius: 4px;
     }
 }
+::placeholder {
+    color: #cccccc;
+    opacity: 1;
+  }
+
 .contacts > form input[type='submit'] {
     font-size: 18px;
     line-height: 22.63px;
@@ -689,7 +702,7 @@ footer {
         width: 81px;
         height: 81px;
     }
-    .color-container > .little-circle {
+    .color-container-table > .little-circle {
         width: 30px;
         height: 30px;
     }
@@ -701,7 +714,7 @@ footer {
     .color-container > .sand {
         margin-right: 22px;
     }
-    .color-container > .little-sand {
+    .color-container-table > .little-sand {
         margin-right: 10px;
     }
     header a:hover {
@@ -750,7 +763,7 @@ footer {
         width: 49.5px;
         height: 49.5px;
     }
-    .color-container > .little-circle {
+    .color-container-table > .little-circle {
         width: 40px;
         height: 40px;
     }
@@ -760,7 +773,7 @@ footer {
         width: 69.5px;
         height: 69.5px;
     }
-    .color-container > .little-circle {
+    .color-container-table > .little-circle {
         width: 50px;
         height: 50px;
     }
