@@ -55,6 +55,10 @@ p {
 .white {
     color: #fff;
 }
+.container {
+    width: 1440px;
+    margin: 0 calc(50% - 720px);
+}
 
 /* HEADER*/
 
@@ -337,7 +341,6 @@ header a:hover {
 /* FIN section */
 
 .fin-background {
-    margin: 12px 0 20px 0;
     background-image: url('../assets/Mask group.png');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -346,42 +349,24 @@ header a:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 300px;
-    max-height: 300px;
-    @media (min-width: 500px) {
-        max-width: 350px;
-        max-height: 350px;
+    max-width: 425px;
+    max-height: 425px;
+    margin: 12px 0 20px 0;
+    @media (min-width: 425px) {
         margin: 45px 0 50px 0;
     }
     @media (min-width: 1000px) {
-        max-width: 425px;
-        max-height: 425px;
+        margin: 30px 0 0 0;
     }
 }
 .fin {
+    width: 122.824%;
     height: auto;
-    min-width: 310px;
-    min-height: 317px;
-    margin: 0px 0 0px 0;
-    @media (min-width: 500px) {
-        min-width: 430px;
-        height: 430px;
-    }
-    @media (min-width: 1000px) {
-        min-width: 369px;
-        height: 369px;
-        margin: 0;
-    }
-    @media (min-width: 1200px) {
-        min-width: 522px;
-        height: 522px;
-        margin: 0;
-    }
 }
 .fin-grid {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
 }
 .fin-grid > h2 {
     @media (min-width: 1000px) {
@@ -564,12 +549,14 @@ body > .leasing {
 /* CONTACT section */
 
 section > .contact {
+    margin-top: 19px;
     font-weight: 700;
     font-size: 28px;
     line-height: 32px;
     color: #444444;
     text-align: center;
     @media (min-width: 870px) {
+        margin-top: 42px;
         width: 70%;
         margin-left: 15%;
         font-size: 48px;
@@ -587,7 +574,7 @@ section > .contact-p {
     color: #222222;
     text-align: center;
     width: 75%;
-    margin-left: 12.5%;
+    margin: 18px 12.5% 28px 12.5%;
     @media (min-width: 870px) {
         font-size: 28px;
         line-height: 32px;
@@ -627,7 +614,7 @@ section > .contact-p {
     width: 98px;
     height: 48px;
     margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
     font-family: 'Source Sans Pro';
     border: none;
     @media (min-width: 870px) {
