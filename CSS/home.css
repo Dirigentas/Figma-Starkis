@@ -470,8 +470,6 @@ header a:hover {
 /* LEASING section */
 
 body .leasing {
-    /* background-image: url('../assets/marc-olivier-jodoin-TjqzQlWlcP8-unsplash.png'); */
-    /* background-color: #45a1d1; */
     background-image: url('../assets/BG.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -790,16 +788,16 @@ footer {
         height: 91px;
     }
 }
-#succes-icon {
-    position: absolute;
-    transform: translate(-50%);
-    left: 50%;
-    width: 50px;
-    bottom: -70px;
-    display: none;
-}
 @media (min-width: 1392px) {
     .big-table-container {
         justify-content: space-between;
     }
+}
+#succes-icon {
+    width: 50px;
+    position: absolute;
+    /* transform: translate(-50%); */
+    /* left: 50%; */
+    /* bottom: -70px; */
+    display: none;
 }
