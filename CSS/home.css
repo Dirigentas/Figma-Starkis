@@ -793,11 +793,3 @@ footer {
         justify-content: space-between;
     }
 }
-#succes-icon {
-    width: 50px;
-    position: absolute;
-    /* transform: translate(-50%); */
-    /* left: 50%; */
-    /* bottom: -70px; */
-    display: none;
-}

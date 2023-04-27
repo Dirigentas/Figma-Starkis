@@ -1,36 +1,39 @@
-const emailForm = document.querySelector('form');
-const succesIcon = document.getElementById('succes-icon');
-
+const emailInput = document.querySelector('.input[type="email"]');
 const showSuccesMessage = () => {
-    succesIcon.style.display = 'block';
+    emailInput.value = 'Jūsų užklausą gavome. Netrukus susisieksime!';
+    emailInput.style.color = '#1F8CC5';
 
-    setTimeout(()=> {
-        succesIcon.style.display = 'none';
-    },3000)
+    function myFunction(x) {
+        if (x.matches) {
+          emailInput.style.fontSize = "12px";
+        }
+      }
+      const x = window.matchMedia("(max-width: 500px)")
+      myFunction(x)
+      x.addListener(myFunction)
 }
-
-postToGoogleSheet = (event) => {
-    event.preventDefault();
-    const formData = new FormData(emailForm);
-
-    const formValues = {
-        name: 'Kajakas',
-        email: formData.get('email'),
-        phone: 'Kajakas'
-    }
-
-    var requestOptions = {
-        method: 'GET',
-        redirect: 'follow'
-    };
-
-    setTimeout(() => {
-
-        fetch(`https://script.google.com/macros/s/AKfycbxYGwpzOVK3X7tflM6Uvmryg_Et3mtaUktRxAxqtzmG946BS6h4PwWCLMzP6vb0XLZpYg/exec?name=${formValues.name}&email=${formValues.email}&phoneNumber=${formValues.phone}`, requestOptions)
+window.addEventListener("load", function() {
+    const form = document.getElementById('my-form');
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      fetch('https://script.google.com/macros/s/AKfycbw-gcSIFW7hXCWhbNYPcAdbupahnYaXfuq8xeGsdt510LGKpJk8CM5RMmAMS2JvizPn/exec', {
+        method: 'POST',
+        body: data,
+      })
         .then(response => response.text())
         .then(result => console.log(result), showSuccesMessage())
         .catch(error => console.log('error', error));
-    }, 1000)
-}
+    });
+  });
 
-emailForm.addEventListener('submit', (event) => postToGoogleSheet(event));
+
+emailInput.addEventListener('invalid', function (event) {
+    if (event.target.validity.valueMissing || event.target.validity.typeMismatch) {
+    event.target.setCustomValidity('Prašome įvesti taisyklingą el.pašto adresą.');
+    }
+})
+
+emailInput.addEventListener('change', function (event) {
+    event.target.setCustomValidity('');
+})
