@@ -16,26 +16,26 @@
         <div class="container">
             <nav class="top-nav">
                 <div>
-                <img class="logo" src="./assets/logo.png" alt="logo">
+                    <img class="logo" src="./assets/logo.png" alt="logo">
+                </div>
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
+                <ul class="menu">
+                    <li><a href="#about">Apie</a></li>
+                    <li><a href="#specs">Ypatybės</a></li>
+                    <li><a href="#price">Kaina</a></li>
+                    <li><a href="#try">Išbandyk</a></li>
+                </ul>
+            </nav>
+            <h1>Patirk minamo kajako greitį ir komfortą</h1>
+            <div>
+                <a href="#about" class="header-link">Sužinoti daugiau</a>
             </div>
-            <input id="menu-toggle" type="checkbox" />
-            <label class='menu-button-container' for="menu-toggle">
-                <div class='menu-button'></div>
-            </label>
-            <ul class="menu">
-                <li><a href="#about">Apie</a></li>
-                <li><a href="#specs">Ypatybės</a></li>
-                <li><a href="#price">Kaina</a></li>
-                <li><a href="#try">Išbandyk</a></li>
-            </ul>
-        </nav>
-        <h1>Patirk minamo kajako greitį ir komfortą</h1>
-        <div>
-            <a href="#about" class="header-link">Sužinoti daugiau</a>
         </div>
-    </div>
     </header>
-    
+
     <div class="container">
         <section class="section-container" id="about">
             <div class="kayak-grid">
@@ -57,7 +57,7 @@
                 <a href="#features" class="ergonomics-link dark">Kajako ypatybės</a>
             </div>
         </section>
-    
+
         <section class="section-container">
             <div class="fin-grid">
                 <h2>„Pelekas“ pedalų varomoji sistema</h2>
@@ -167,6 +167,7 @@
             <p class="contact-p">Užsiregistruok ir pakviesime tave paplaukti Starkiu</p>
             <form class="contact-form" id="my-form">
                 <input required class="input" type="email" name="email" placeholder="Elektroninio pašto adresas">
+                <p class="error-alert">Prašome įvesti taisyklingą el.pašto adresą.</p>
                 <input type="submit" value="Siųsti">
             </form>
         </section>
