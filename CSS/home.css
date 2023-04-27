@@ -191,7 +191,7 @@ p {
     }
 }
 header {
-    background-image: url('../assets/garrett-butler-dU22KiaO0mk-unsplash 2.png');
+    background-image: url('../assets/garrett-butler-dU22KiaO0mk-unsplash-2.png');
     background-size: cover;
     background-position: top;
     height: 567px;
@@ -347,7 +347,7 @@ header a:hover {
 /* FIN section */
 
 .fin-background {
-    background-image: url('../assets/Mask group.png');
+    background-image: url('../assets/mask-group.png');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -470,7 +470,7 @@ header a:hover {
 /* LEASING section */
 
 body .leasing {
-    background-image: url('../assets/BG.png');
+    background-image: url('../assets/bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -679,7 +679,7 @@ footer {
         line-height: 23px;
     }
     header {
-        background-image: url('../assets/garrett-butler-dU22KiaO0mk-unsplash 1.png');
+        background-image: url('../assets/garrett-butler-dU22KiaO0mk-unsplash-1.png');
         background-size: cover;
         height: 542px;
     }
