@@ -1,18 +1,30 @@
 const emailInput = document.querySelector('.input[type="email"]');
 const errorrAlert = document.getElementsByClassName('error-alert');
+const width = window.matchMedia("(max-width: 500px)")
 
 const showSuccesMessage = () => {
   emailInput.value = 'Jūsų užklausą gavome. Netrukus susisieksime!';
   emailInput.style.color = '#1F8CC5';
 
-  function myFunction(x) {
-    if (x.matches) {
+  function fontSize12(width) {
+    if (width.matches) {
       emailInput.style.fontSize = "12px";
     }
   }
-  const x = window.matchMedia("(max-width: 500px)")
-  myFunction(x)
-  x.addListener(myFunction)
+  fontSize12(width)
+  width.addListener(fontSize12)
+
+  setTimeout(() => {
+    emailInput.value = '';
+    emailInput.style.color = 'black';
+    function fontSize16(width) {
+      if (width.matches) {
+        emailInput.style.fontSize = "16px";
+      }
+    }
+    fontSize16(width)
+    width.addListener(fontSize16)
+  }, 4000)
 }
 window.addEventListener("load", function () {
   const form = document.getElementById('my-form');
@@ -32,11 +44,16 @@ window.addEventListener("load", function () {
 
 emailInput.addEventListener('invalid', function (event) {
   if (event.target.validity.valueMissing || event.target.validity.typeMismatch) {
-    event.target.setCustomValidity('Prašome įvesti taisyklingą el.pašto adresą.');
-
+    errorrAlert[0].style.display = 'block';
   }
 })
 
 emailInput.addEventListener('change', function (event) {
-  event.target.setCustomValidity('');
+  errorrAlert[0].style.display = 'none';
 })
+
+emailInput.addEventListener('invalid', (function () {
+  return function (e) {
+    e.preventDefault();
+  };
+})(), true);
